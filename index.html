@@ -15,7 +15,13 @@
 </body>
     <script>
         document.getElementById("parag1");
-        document.querySelector("btn1");
-        document.querySelector("btn2");
+        document.querySelector("btn1").addEventListener("click", function(){
+            alert("Button 1 triggered");
+        })
+        document.querySelector("btn2").addEventListener("dblclick",function (){
+            document.getElementById("parag1").style.color = "red";
+        });
+
+        
     </script>
 </html>
